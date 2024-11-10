@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(
+        135deg,
+        #3d52a0,
+        #7091e9,
+        #8697c4,
+        #adbbda,
+        #ede8f5
+    );
+}
+
+
+#content {
+    width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#chartContainer,
+#historicalChartContainer,
+#revenueChartContainer,
+#newsContainer {
+    margin-bottom: 20px;
+}
+
+#favoritesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#favoritesList li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#favoritesList li:hover {
+    background-color: #f1f1f1;
+}
+
+h2 {
+    color: #333;
+}
+
+#currentPrice {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 5px;
+}

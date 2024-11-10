@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Chart Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="content">
+        <h1>Stock Chart Viewer</h1>
+        <!-- Search and Buttons -->
+        <div>
+            <input type="text" id="stockSymbol" class="form-control" placeholder="Enter stock symbol" aria-label="Enter stock symbol" aria-describedby="getChartButton addToCompareButton">
+            <button class="button-add-to-compare" id="getChart">Get Chart</button>
+            <button class="button-add-to-compare" type="button" id="addToCompare">Add to Compare</button>
+        </div>
+        
+        <!-- Chart and Stock Info -->
+        <div id="chartContainer"></div>
+        <div class="stock-info">
+            <h2>Current Price: &#8377;<span id="currentPrice" class="price">-</span></h2>
+        </div>
+
+        <!-- Favorite Stocks -->
+      <!-- Favorite Stocks -->
+<div class="favorites">
+    <h2>Favorite Stocks</h2>
+    <input type="text" id="addFavoriteSymbol" class="form-control" placeholder="Add to favorites">
+    <button class="button-add-to-compare" id="addFavorite">Add Favorite</button>
+    <!-- Actions -->
+    <ul class="favorites-list" id="favoritesList">
+        <!-- Example List Item -->
+        <li class="favorites-item">
+            <div class="favorite-box">
+                <span>Company Name</span>
+                <button class="button-remove-favorite" type="button"><i class="fas fa-trash-alt"></i></button>
+                <button class="button-add-to-compare" type="button">Add to Compare</button>
+            </div>
+        </li>
+    </ul>
+</div>
+
+        <br>
+   <br>
+        <!-- Actions -->
+        <div class="mt-4">
+            <button class="button-85 " id="viewDetails">View Company Details</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="button-85" id="viewCompare">View Comparison</button>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="popup.js"></script>
+</body>
+</html>
